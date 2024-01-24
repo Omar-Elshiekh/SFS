@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/views.css">
+    <title>Coaches</title>
+</head>
+<body>
+<div class="summary">
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="teams"> Teams</a></li>
+        <li><a href="games"> Game Calendar</a></li>
+        <li><a href="team_memberships"> Team Members</a></li>
+        <li><a href="coaches"> Coaches</a></li>
+    </ul>
+</nav>
+<h1> COACHES</h1>
+        <section class="dataTable">
+            <table class="data">
+                <tr>
+                    <th>Coach ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Qualification Name</th>
+                </tr>
+                <% coaches.forEach(coach=>{  %>
+                    <tr>
+                        <td>
+                            <%= coach.Coach_ID %>
+                        </td>
+                        <td>
+                            <%= coach.Coach_FName %>
+                        </td>
+                        <td>
+                            <%= coach.Coach_LName %>
+                        </td>
+                        <td>
+                            <%= coach.Qualifications %>
+                        </td>
+                    </tr>
+                <%})%>
+            </table>
+
+        </section>
+        <form method="post" action="/coaches/new" id="coachesForm">
+            
+            <div class="form-group">
+                <label>First Name:</label>
+                <input type="text" name="first_name"> 
+            </div>
+        
+            <div class="form-group">
+                <label>Last Name:</label>
+                <input type="text" name="last_name">
+            </div>
+            
+            <div class="form-group">
+                <label>Qualification Name:</label>
+                <input type="text" name="qualification_name">
+            </div>
+        
+            <button type="submit">Add Coach</button>
+        
+        </form>
+</div>
+</body>

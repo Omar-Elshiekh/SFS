@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/views.css">
+	<title>Edit Team Member</title>
+</head>
+
+<body>
+    <div class="summary">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/teams"> Teams</a></li>
+                <li><a href="/games"> Game Calendar</a></li>
+                <li><a href="/team_memberships"> Team Members</a></li>
+                <li><a href="/coaches"> Coaches</a></li>
+            </ul>
+        </nav>
+        <h1>EDIT TEAM MEMBER: <%=team_member.Stu_FName%> <%=team_member.Stu_LName%></h1>
+        <h2>
+             <%= message %> 
+             <h3>
+                <form method="post" class="edit_form">
+                    <p><label for="position">Update Position:</label>
+                       <input type ="text" value ="<%=team_member.Position%>" name ="Position" required>
+
+                   </p>
+                    <p>
+                        <label for="Memb_Type">Update Membership Type:</label>
+                       <select class="form-control" name="Memb_Type" id="Memb_Type" required>
+                           <% membershipTypes.forEach(membershipType => { %>
+                               <option value="<%= membershipType.Memb_Type %>" <%= team_member.Memb_Type === membershipType.Memb_Type ? "selected" : "" %>>
+                                   <%= membershipType.Memb_Type %>
+                               </option>
+                           <% }) %>
+                       </select>
+                    </p>
+                    <input type="submit" value="Update">
+                </form>
+            </h3>
+        </h2>
+    </div>
+
+
+</body>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/views.css">
+    <title>Team Members</title>
+</head>
+
+<body>
+    <div class="summary">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="teams"> Teams</a></li>
+                <li><a href="games"> Game Calendar</a></li>
+                <li><a href="team_memberships"> Team Members</a></li>
+                <li><a href="coaches"> Coaches</a></li>
+            </ul>
+        </nav>
+        <h1>TEAM MEMBERS</h1>
+        <section class="dataTable">
+            <table class="data">
+                <tr>
+                    <th>Membership ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>Height</th>
+                    <th>Weight</th>
+                    <th>Position</th>
+                    <th>Membership Type</th>
+                    <th>Team Name</th>
+                    <th> Actions </th>
+                </tr>
+                <% team_members.forEach(team_member=> { %>
+					<tr>
+                        <td>
+                            <%=team_member.Memb_ID%>
+                        </td>
+						<td>
+							<%= team_member.Stu_FName %>
+						</td>
+						<td>
+							<%= team_member.Stu_LName %>
+						</td>
+						<td>
+							<%= team_member.Age %>
+						</td>
+						<td>
+							<%= team_member.Height %>
+						</td>
+						<td>
+							<%= team_member.Weight %>
+						</td>
+						<td>
+							<%= team_member.Position %>
+                        </td>
+                        <td>
+							<%= team_member.Memb_Type %>
+                        </td>
+                        <td>
+							<%= team_member.Team_Name %>
+                        </td>
+                         <td> <a href="/team_members/edit/<%=team_member.Memb_ID%>"> Edit </a> <a href="/team_members/view/<%=team_member.Memb_ID%>">
+                            View </a> </td> 
+					</tr>
+					<% })%>
+    </div>
+</body>

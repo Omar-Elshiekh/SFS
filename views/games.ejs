@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/views.css">
+    <title>Games</title>
+</head>
+
+<body>
+<div class ="summary">
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="teams"> Teams</a></li>
+            <li><a href="games"> Game Calendar</a></li>
+            <li><a href="team_memberships"> Team Members</a></li>
+            <li><a href="coaches"> Coaches</a></li>
+        </ul>
+    </nav>
+    <h1> GAMES CALENDAR</h1>
+    <section class="dataTable">
+        <table class="data">
+            <tr>
+                <th>Game Date</th>
+                <th>Game Time</th>
+                <th>Game Location</th>
+                <th>Team Playing</th>
+            </tr>
+            <% games.forEach(game=>{ %>
+                <tr>
+                    <td>
+                        <%= game.Game_Date%>
+                    </td>
+                    <td>
+                        <%= game.Game_Time%>
+                    </td>
+
+                    <td>
+                        <%= game.Game_Location%>
+                    </td>
+                    <td>
+                        <%= game.Team_Name%>
+                    </td>
+                </tr>
+           <% }) %>
+        </table>
+    </section>
+</div>
+
+
+</body>

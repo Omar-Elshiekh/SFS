@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/views.css">
+	<title>View Team Member</title>
+</head>
+<body>
+    <div class ="summary">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/teams"> Teams</a></li>
+                <li><a href="/games"> Game Calendar</a></li>
+                <li><a href="/team_memberships"> Team Members</a></li>
+                <li><a href="/coaches"> Coaches</a></li>
+            </ul>
+        </nav>
+        <h1>TEAM MEMBER: <%=team_member.Stu_FName%> <%=team_member.Stu_LName%></h1>
+        <h2>
+            <div class="teamView">
+               <ul>
+                   <li>Membership ID: <%=team_member.Memb_ID%></li>
+                   <li>Age: <%=team_member.Age%></li>
+                   <li>Height: <%=team_member.Height%></li>
+                   <li>Weight: <%=team_member.Weight%></li>
+                   <li>Position: <%=team_member.Position%></li>
+                   <li>Membership Type: <%=team_member.Memb_Type%></li>
+                   <li>Team Name: <%=team_member.Team_Name%></li>
+                   <li>URN: <%=team_member.URN%></li>
+                   <li>Phone: <%=team_member.Stu_Phone%></li>
+               </ul> 
+            </div>
+        </h2>
+    </div>
+</body>

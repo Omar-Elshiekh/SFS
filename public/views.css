@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+/*copyright to joeappleton18 @github*/
+h1{
+    font-size: 2.5 rem;
+    font-weight: 700;
+    margin-bottom: 1 rem;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.data th,
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.data th {
+    background-color: #333;
+    color: #fff;
+  }
+.dataTable{
+     display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.data tr:nth-child(even) {
+    background-color: #f4f7fa;
+  }
+  .data tr:hover {
+    background-color: #ddd;
+  }
+  .dataTable {
+    padding: 20px 20%;
+  }
+
+  nav {
+      background-color: rgb(75, 74, 74);
+      color: white;
+      margin-bottom: 50px;
+  }
+  nav ul {
+      display: flex;
+      justify-content: center;
+      padding: 15px 10px;
+  }
+  
+  nav  li {
+      margin: 0 25px;
+      list-style: none;
+  }
+  
+  nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+  }
+
+/*end of copyright*/
+
+
+  #coachesForm{
+  display: flex;
+  flex-direction: column;
+  }
+
+  #coachesForm button{
+    width: 200px;
+    margin: auto;
+    background-color: #333;
+    border-radius: 5px;
+    height: 30px;
+    color: #fff;
+    }
+
+    #coachesForm button:hover{
+      background-color: #161616;
+
+    }
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: auto;
+  input[type="text"] {
+    width: 300px;
+    height: 20px;
+    margin-bottom: 20px;
+  }
+  
+}
+
+
+.teamView{
+margin: 2rem 1rem;
+font-size: 18px;
+font-family: 'Courier New', Courier, monospace;
+}   
+
+.teamView ul li{
+  padding-block: 8px;
+  font-weight: 600;
+}

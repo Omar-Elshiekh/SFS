@@ -1,0 +1,134 @@
+/*copyright to joeappleton18 @github*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: whitesmoke;
+}
+
+
+nav {
+    background-color: rgb(75, 74, 74);
+    color: white
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 15px 10px;
+}
+
+nav li {
+    margin: 0 25px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url("footy-background.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    text-align: center;
+    height: 47vh;
+    padding: 50px 0px 10px;
+
+}
+
+.hero h1 {
+    font-weight: bolder;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    padding-top: 20px;
+}
+
+.hero p {
+    font-weight: bold;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+/*appropriate referencing is found in the coursework template file  */
+.cta-button {
+    margin-top: 40px;
+    text-align: center;
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 14px;
+    color: #2a9d8f;
+    background-color: #f9fcff;
+    padding: 10px 30px;
+    border: solid #2a9d8f 2px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    border-radius: 50px;
+    transition: 526ms;
+    transform: translateY(0);
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+
+    transition: 526ms;
+    padding: 10px 50px;
+    transform: translateY(-0px);
+    background-color: #808080;
+    color: #00ffdd;
+    border: solid 2px #2a9d8f;
+}
+
+.about {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.summary,
+.summary h1 {
+    margin-left: 50px;
+    max-width: 1800px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.summary_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 28px 0;
+}
+
+.summary_items a {
+    text-decoration: none;
+}
+
+.summary_items .card {
+    text-decoration: none;
+    color: white;
+    background-color: #3498db;
+    border-radius: 50%;
+    ;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    background-color: grey;
+}

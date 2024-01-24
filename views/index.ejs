@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SURREY FOOTBALL SOCIETY</title>
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+
+<body>
+    <div class="content">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="teams"> Teams</a></li>
+                <li><a href="games"> Game Calendar</a></li>
+                <li><a href="team_memberships"> Team Members</a></li>
+                <li><a href="coaches"> Coaches</a></li>
+            </ul>
+        </nav>
+        <header class="hero">
+            <h1>WELCOME TO SURREY FOOTBALL SOCIETY OFFICIAL WEBSITE</h1>
+            <p>THIS IS YOUR GO-TO WEBSITE FOR ALL NEWS RELATED TO OUR TEAMS, GAMES, PLAYERS, AND COACHES</p>
+            <a href="games" class="cta-button">Click here to view the games calendar</a>
+        </header>
+        <section class="about">
+            <h2>About Us</h2>
+            <p>
+                We are a group of students who want to make it easy for the lovers of the beautiful game to involve in
+                our activites throught their time at university. All skills levels are welcomed, and looking forward to
+                see you all soon!
+            </p>
+        </section>
+        <section class="summary">
+            <h1>Have a look at our members,teams and coaches</h1>
+            <div class="summary_items">
+                <a href="/students">
+                    <section class="card">
+                        <h2>
+                            <%=studentCount %>
+                        </h2>
+                        <h3> Students</h3>
+                    </section>
+                </a>
+                <a href="/team_memberships">
+                    <section class="card">
+                        <h2>
+                            <%=membersCount%>
+                        </h2>
+                        <h3>Team Members</h3>
+                    </section>
+                </a>
+                <a href="teams">
+                    <section class="card">
+                        <h2>
+                            <%=teamsCount%>
+                        </h2>
+                        <h3>Teams</h3>
+                    </section>
+                </a>
+                <a href="coaches">
+                    <section class="card">
+                        <h2>
+                            <%=coachCount%>
+                        </h2>
+                        <h3>Coaches</h3>
+                    </section>
+                </a>
+
+            </div>
+        </section>
+
+    </div>
+    <footer class="footer">
+        <h2>Join our mailing list for weekly gossip!</h2>
+
+        <form action="/" method="get">
+            <label for="name">Name:</label>
+            <p>
+                <input type="text" id="name" name="name" placeholder="enter name" required>
+            </p>
+            <label for="email">Email:</label>
+            <p>
+                <input type="email" id="email" placeholder="enter email" required>
+            </p>
+            <input class="cta-button" type="submit" value="Submit">
+        </form>
+    </footer>
+
+</body>
+
+</html>

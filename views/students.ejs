@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/views.css">
+    <title>Students</title>
+</head>
+
+<body>
+
+    <div class="summary">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="teams"> Teams</a></li>
+                <li><a href="games"> Game Calendar</a></li>
+                <li><a href="team_memberships"> Team Members</a></li>
+                <li><a href="coaches"> Coaches</a></li>
+            </ul>
+        </nav>
+        <h1>STUDENTS</h1>
+        <section class="dataTable">
+            <table class="data">
+                <tr>
+                    <th>URN</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>DOB</th>
+                    <th>Phone Number</th>
+                    <th>Course</th>
+                    <th>Type</th>
+                </tr>
+                <% students.forEach(student=> { %>
+					<tr>
+						<td>
+							<%= student.URN %>
+						</td>
+						<td>
+							<%= student.Stu_FName %>
+						</td>
+						<td>
+							<%= student.Stu_LName %>
+						</td>
+						<td>
+							<%= student.Stu_DOB %>
+						</td>
+						<td>
+							<%= student.Stu_Phone %>
+						</td>
+						<td>
+							<%= student.Crs_Title %>
+						</td>
+						<td>
+							<%= student.Stu_Type %>
+                        </td>
+					</tr>
+					<% })%>
+            </table>
+        </section>
+    </div>
+
+</body>
+</html>
